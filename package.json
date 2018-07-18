@@ -1,0 +1,23 @@
+{
+  "name": "do-it-again-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^2.5.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sararilfy/do-it-again-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sararilfy/do-it-again-view/issues"
+  },
+  "homepage": "https://github.com/sararilfy/do-it-again-view#readme"
+}
