@@ -9,7 +9,10 @@
 
 <div id="app">
 
-  <button v-on:click="handleClick">Click</button>
+  <p>{{ message }}</p>
+  <p>{{ count }}</p>
+  <input v-model="message">
+  <input v-model.number="count" type="number">
 
 </div>
 
