@@ -1,9 +1,10 @@
 var app = new Vue({
   el: '#app',
-  created: function() {
-    console.log('created');
-  },
   data: {
-    show: true
+    message: 'test',
+    scroll: 0
+  },
+  mounted: function() {
+    this.scroll = 100
   }
 });

@@ -9,10 +9,9 @@
 
 <div id="app">
 
-  <button v-on:click="show = !show">切り替え</button>
-  <transition>
-    <p v-if="show">Hello</p>
-  </transition>
+  <div :text-content.prop="message">...</div>
+  <div :scroll-top.prop="scroll">...</div>
+
 </div>
 
 <script src="vue.js"></script>
