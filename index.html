@@ -9,8 +9,10 @@
 
 <div id="app">
 
-  <p v-if="show">Hello!</p>
-
+  <button v-on:click="show = !show">切り替え</button>
+  <transition>
+    <p v-if="show">Hello</p>
+  </transition>
 </div>
 
 <script src="vue.js"></script>
