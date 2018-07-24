@@ -1,9 +1,13 @@
 var app = new Vue({
   el: '#app',
   data: {
-    isChild: true,
-    isActive: true,
-    textColor: 'blue',
-    bgColor: 'skyblue'
+    classObject: {
+      Child: true,
+      isActive: false
+    },
+    styleObject: {
+      color: 'blue',
+      backgroundColor: 'skyblue'
+    }
   }
 });
