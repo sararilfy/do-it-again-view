@@ -9,10 +9,15 @@
 
 <div id="app">
 
-  <template v-if="ok">
-    <header>タイトル</header>
-    <div>コンテンツ</div>
-  </template>
+  <div v-if="type === 'A'">
+    type は A
+  </div>
+  <div v-else-if="type === 'B'">
+    type は B
+  </div>
+  <div v-else>
+    条件を満たさない
+  </div>
 
 </div>
 
