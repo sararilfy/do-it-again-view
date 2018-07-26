@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <div v-if="type === 'A'">
+    type は A
+  </div>
+  <div v-else-if="type === 'B'">
+    type は B
+  </div>
+  <div v-else>
+    条件を満たさない
+  </div>
+
+</div>
+
+<script src="vue.js"></script>
+<script src="9-2.js"></script>
+</body>
+</html>
