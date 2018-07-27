@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+</head>
+<body>
+
+<div id="app">
+
+  <ul>
+    <li v-for="item in monster" v-bind:key="item.id">
+      ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
+    </li>
+  </ul>
+
+</div>
+
+<script src="../vue.js"></script>
+<script src="10-1.js"></script>
+</body>
+</html>
