@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+</head>
+<body>
+
+<div id="app">
+
+  <ul>
+    <li
+            v-for="item in monster"
+            v-bind:key="item.id"
+            v-bind:class="{ tuyoi: item.hp > 300 }"
+            v-if="item.hp > 300">
+      ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
+      <span v-if="item.hp > 300">強い！</span>
+    </li>
+  </ul>
+
+</div>
+
+<script src="../vue.js"></script>
+<script src="10-2.js"></script>
+</body>
+</html>
