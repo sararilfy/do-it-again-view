@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- 追加ボタン -->
+  名前：<input v-model="name">
+  <button v-on:click="doAdd">ぶい追加</button>
+
+  <ul>
+    <li
+            v-for="(item, index) in monster"
+            v-bind:key="item.id"
+            v-bind:class="{ tuyoi: item.hp > 300 }">
+      ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
+      <span v-if="item.hp > 300">強い！</span><br>
+      <!-- 削除ボタン -->
+      <button v-on:click="doRemove(index)">バイバイする</button>
+    </li>
+  </ul>
+
+</div>
+
+<script src="../../vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
