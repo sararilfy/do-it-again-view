@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+</head>
+<body>
+
+<div id="app">
+
+  <span v-for="item in 15">{{ item }}</span><br>
+
+  <span v-for="item in [1, 16, 29, 30]">{{ item }}</span>
+
+  <!-- https://cr-vue.mio3io.com/examples/text-animation.html -->
+  <div v-for="item in text">{{ item }}</div>
+
+</div>
+
+<script src="../../vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
