@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+</head>
+<body>
+
+<div id="app">
+
+  <p ref="hello">Hello!</p>
+
+  <button v-on:click="handleClick">カウントアップ</button>
+  <button v-on:click="show=!show">表示・非表示</button>
+  <span ref="count" v-if="show">0</span>
+
+</div>
+
+<script src="../../vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
