@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+  <style>
+    @keyframes cloack-in {
+      0% {
+        opacity: 0;
+      }
+    }
+    #test {
+      animation: cloack-in 1s;
+    }
+    #test[v-cloak] {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <!-- v-pre Mustacheやディレクティブがそのまま表示 -->
+  <a v-bind:href="url" v-pre>
+    「{{ message }}」
+  </a>
+
+  <br>
+
+  <!-- v-once 1回だけ表示して、以降リアクティブを解除 -->
+  <a v-bind:href="url" v-once>
+    「{{ message }}」
+  </a>
+
+  <br>
+
+  <!-- v-text Mustacheのみの場合テキストコンテンツをバインド可能 -->
+  <span v-text="message"></span>
+
+  <br>
+
+  <!-- v-html HTMLをそのまま表示 -->
+  <span v-html="message"></span>
+
+  <br>
+
+  <!-- v-cloak インスタンス作成までの間、Mustacheなどのコンパイル前のテンプレートが表示されないようにする -->
+  <span id="test" v-html="message" v-cloak></span>
+
+
+</div>
+
+<script src="../../vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
