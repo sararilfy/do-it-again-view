@@ -8,7 +8,9 @@
 
 <div id="app">
 
-  <button v-on:click="handleClick">クリック</button>
+  <button v-on:click="handleClick">クリックで一言</button>
+  <button v-on:click="count++">クリックで数字ふやす</button>
+  <p>{{count}}</p>
 
 </div>
 
