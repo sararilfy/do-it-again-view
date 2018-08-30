@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Practice</title>
+  <style>
+    img {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+    img.hide {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <img src="image.png" v-on:load="show=true" v-bind:class="{hide: !show}" alt="">
+  </div>
+
+<script src="../../vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
