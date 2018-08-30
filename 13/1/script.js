@@ -4,8 +4,8 @@ var app = new Vue({
     count: 0
   },
   methods: {
-    handleClick: function() {
-      alert('眠いね！');
+    handleClick: function(item) {
+      alert(item);
     }
   }
 });
